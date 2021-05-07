@@ -9,9 +9,9 @@ const app = express();
 const port = process.env.PORT || 9000;
 
 const pusher = new Pusher({
-  appId: "1198884",
-  key: "367c10714f4d5b7b7a92",
-  secret: "d8469b28137082a62dca",
+  appId: "**",
+  key: "**",
+  secret: "**",
   cluster: "eu",
   useTLS: true,
 });
@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 
 // db config
 const connectdb =
-  "mongodb+srv://admin:1Q3HifB4imAKrqqW@cluster0.ddckr.mongodb.net/whatsappDatabase?retryWrites=true&w=majority";
+  "your db adress";
 
 mongoose.connect(connectdb, {
   useCreateIndex: true,
