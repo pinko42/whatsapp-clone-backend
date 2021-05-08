@@ -9,9 +9,9 @@ const app = express();
 const port = process.env.PORT || 9000;
 
 const pusher = new Pusher({
-  appId: "**",
-  key: "**",
-  secret: "**",
+  appId: "***",
+  key: "****",
+  secret: "****",
   cluster: "eu",
   useTLS: true,
 });
@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 
 // db config
 const connectdb =
-  "your db adress";
+  "your db ";
 
 mongoose.connect(connectdb, {
   useCreateIndex: true,
